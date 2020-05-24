@@ -18,8 +18,8 @@ The TiVA Core provides you with:
 
 - Load, save, edit and translate (to XTA format) the DSL code.
 - Load, save, edit and produce XTA format (sets of timed automata of your model).
-- Edit your UPPAAL CTL properties for verification.
-- Display the results of the verification (an internal call to UPPAAL Engine is performed).
+- Load, save and edit your UPPAAL CTL properties for verification.
+- Display and save the results of the verification (an internal call to UPPAAL Engine is performed).
 
 Further, verifications and graphical simulations (for counter examples for instance) can also achieved from outside the TiVA Core using UPPAAL Tool (using the XTA file provided and saved by TiVA Core).
 
