@@ -22,3 +22,7 @@ The TiVA Core provides you with:
 - Display the results of the verification (an internal call to UPPAAL Engine is performed).
 
 Further, verifications and graphical simulations (for counter exemples for instance) can also achieved from outside the TiVA Core using UPPAAL Tool (using the XTA file provided and saved by TiVA Core).
+
+3. Examples:
+
+Examples of models of systems to verify are available in the "examples" folder.
