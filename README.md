@@ -21,7 +21,7 @@ The TiVA Core provides you with:
 - Edit your UPPAAL CTL properties for verification.
 - Display the results of the verification (an internal call to UPPAAL Engine is performed).
 
-Further, verifications and graphical simulations (for counter exemples for instance) can also achieved from outside the TiVA Core using UPPAAL Tool (using the XTA file provided and saved by TiVA Core).
+Further, verifications and graphical simulations (for counter examples for instance) can also achieved from outside the TiVA Core using UPPAAL Tool (using the XTA file provided and saved by TiVA Core).
 
 3. Examples:
 
