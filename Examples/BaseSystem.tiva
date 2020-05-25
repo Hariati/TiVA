@@ -1,0 +1,112 @@
+system Booking;
+
+signature
+researchSeat,researchBdd,noAvailable,waitSeat,noSeat,
+available,okSeat,waitConfirm,cancel,askPay,noCredit,
+payConfirm,freeCancel,cancel,seatConfirm,CancelCharg;
+
+behavior
+init s0;
+final s3,s5,s8,s10,s13,s14,s15;
+trans 
+s0:researchSeat:s1,
+s1:researchBdd[20-30]:s2,
+s2:noAvailable:s3,
+s2:waitSeat[120-120]:s4,
+s4:noSeat:s5, 
+s2:available:s6,
+s4:okSeat:s6,
+s6:waitConfirm[120-120]:s7,
+s7:cancel:s8, 
+s7:askPay[10-15]:s9,
+s9:noCredit:s10,
+s9:payConfirm:s11, 
+s11:freeCancel[0-30]:s12,
+s12:cancel:s13,
+s12:seatConfirm[1-1]:s14,
+s14:CancelCharg:s15;
+end
+
+aspect Encryption;
+
+signature
+inputData, encryptData, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:encryptData[13-18]:s2,
+s2:outputRes:s3:stop;
+end
+
+aspect encryptionLan;
+
+signature
+inputData, encryptDataLan, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:encryptDataLan[12-14]:s2,
+s2:outputRes:s3:stop;
+end
+
+aspect encryptionWifi;
+
+signature
+inputData, encryptDataWifi, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:encryptDataWifi[11-19]:s2,
+s2:outputRes:s3:stop;
+end
+
+aspect externalResearch;
+
+signature
+inputData, searchData, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:searchData[10-15]:s2,
+s2:outputRes:s3:stop;
+end
+
+aspect formatConversion;
+
+signature
+inputData, convertData, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:convertData[5-10]:s2,
+s2:outputRes:s3:stop;
+end
+
+aspect cancelReport;
+
+signature
+inputData, makeReport, outputRes;
+
+behavior
+init s0;
+final s3;
+trans
+s0:inputData:s1:trigger,
+s1:makeReport[2-7]:s2,
+s2:outputRes:s3:stop;
+end
