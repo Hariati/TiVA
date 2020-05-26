@@ -2,7 +2,7 @@ system Booking;
 
 signature
 researchSeat,researchBdd,noAvailable,waitSeat,noSeat,
-available,okSeat,waitConfirm,cancel,askPay,noCredit,
+available,okSeat,waitConfirm,cancel,askpay,noCredit,
 payConfirm,freeCancel,cancel,seatConfirm,CancelCharg;
 
 behavior
@@ -18,7 +18,7 @@ s2:available:s6,
 s4:okSeat:s6,
 s6:waitConfirm[120-120]:s7,
 s7:cancel:s8, 
-s7:askPay[10-15]:s9,
+s7:askpay[10-15]:s9,
 s9:noCredit:s10,
 s9:payConfirm:s11, 
 s11:freeCancel[0-30]:s12,
@@ -111,4 +111,4 @@ s1:makeReport[2-7]:s2,
 s2:outputRes:s3:stop;
 end
 
-Weaving (Booking:*Pay*:Encryption:before);
+Weaving (Booking:*pay*:Encryption:before);
