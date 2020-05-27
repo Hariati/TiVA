@@ -112,6 +112,6 @@ s2:outputRes:s3:stop;
 end
 
 
-Adapter(Booking:askPay[10-15]:encryptionLan:encryptionWifi:before:Mutex),
+Adapter(Booking:askPay[10-15]:encryptionLan:encryptionWifi:before:mutex),
 
-Adapter (Booking:researchBdd[20-30]:externalResearch:formatConversion:after:Prec);
+Adapter (Booking:researchBdd[20-30]:externalResearch:formatConversion:after:prec);
