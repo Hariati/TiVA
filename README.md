@@ -26,3 +26,10 @@ Further, verifications and graphical simulations (for counter examples for insta
 3. Examples:
 
 Examples of models of systems to verify are available in the "examples" folder.
+
+
+In progress...
+
+- For the time being, this version of TiVA Core is operational only on Windows, in a few days, Linux and Mac OS X versions will be available.
+
+- Currently, the execution of TiVA Core requires the existence of a folder 'temp' in the root of your disk, in a few days, a new version will be available not requiring this constraint.
