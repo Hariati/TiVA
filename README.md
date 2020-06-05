@@ -26,7 +26,9 @@ Further, verifications and graphical simulations (for counter examples for insta
 3. Operating systems:
 
 TiVA Core is operational on Windows, Mac OS X and Linux operating systems.
+
 The 'verifyta' file provided here is for an execution under Windows operating system. To run TiVA Core on Mac OS X or Linux, you just need to recover the 'verifyta' file corresponding to your operating system from this link: http://uppaal.org/
+
 You have to download UPPAAL corresponding to your operating system. The 'verifyta' file is located in bin folder of the UPPAAL installation.
 
 4. Examples:
