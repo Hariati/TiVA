@@ -12,7 +12,8 @@ To use TiVA Core you can either:
 
 - Or build the TiVA Core java project from sources.
 
-- TiVA Core (with the 'verifyta' file copied in the same folder) must be run from a location where you have the user rights (to create temporary files used by TiVA Core). You can run TiVA Core from your user folder for example.
+
+TiVA Core (with the 'verifyta' file copied in the same folder) must be run from a location where you have the user rights (to create temporary files used by TiVA Core). You can run TiVA Core from your user folder for example.
 
 2. Provided features:
 
