@@ -8,12 +8,9 @@ For the TiVA DSL and its integration within the Eclipse IDE, see https://github.
 
 To use TiVA Core you can either: 
 
-- Download the TiVA Core (executable jar file) which you can use directly.
+- Download the 'TiVA-Core-xxx.rar' file corresponding to your operating system, decompress it, then run the 'TiVA-Core.jar' file directly.
 
 - Or build the TiVA Core java project from sources.
-
-
-TiVA Core (with the 'verifyta' file copied in the same folder) must be run from a location where you have the user rights (to create temporary files used by TiVA Core). You can run TiVA Core from your user folder for example.
 
 2. Provided features:
 
@@ -28,19 +25,10 @@ Further, verifications and graphical simulations (for counter examples for insta
 
 3. Operating systems:
 
-TiVA Core is operational on Windows and Linux operating systems.
-
-The 'verifyta' file provided here is for an execution under Windows operating system. To run TiVA Core on Linux, you just need to recover the 'verifyta' file corresponding to your operating system from this link: http://uppaal.org/
-
-You have to download UPPAAL corresponding to your operating system. The 'verifyta' file is located in bin folder of the UPPAAL installation.
+TiVA Core is operational on Windows and Linux operating systems. A version of TiVA Core for Mac OS X will be available in a few days.
 
 4. Examples:
 
 Examples of models of systems to verify are available in the "examples" folder.
-
-In progress...
-
-A version of TiVA Core for Mac OS X will be available in a few days.
-
 
 
