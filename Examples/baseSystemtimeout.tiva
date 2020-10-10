@@ -1,0 +1,33 @@
+system Booking;
+
+signature
+enterPass, reInit,
+researchSeat,researchBdd,noAvailable,waitSeat,noSeat,
+available,okSeat,waitConfirm,cancel,askPay,noCredit,
+payConfirm,freeCancel,cancel,seatConfirm,CancelCharg;
+
+behavior
+init s0;
+final s00,s3,s5,s8,s10,s13,s14,s15;
+trans
+s0:enterPass[0-5]:s00,
+s0:reInit[5-5]:s0,
+s00:researchSeat:s1,
+s1:researchBdd[20-30]:s2,
+s2:noAvailable:s3,
+s2:waitSeat[120-120]:s4,
+s4:noSeat:s5, 
+s2:available:s6,
+s4:okSeat:s6,
+s6:waitConfirm[120-120]:s7,
+s7:cancel:s8, 
+s7:askPay[10-15]:s9,
+s9:noCredit:s10,
+s9:payConfirm:s11, 
+s11:freeCancel[0-30]:s12,
+s12:cancel:s13,
+s12:seatConfirm[1-1]:s14,
+s14:CancelCharg:s15;
+end
+
+
